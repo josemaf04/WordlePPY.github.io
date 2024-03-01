@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordle PPY</title>
+        <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="loader"><h1>Cargando palabra secreta...</h1></div>
+    <h1>Wordle PPY</h1>
+    <div id="intento">
+      <div class="letter-guess" id="int1"></div>
+      <div class="letter-guess" id="int2"></div>
+      <div class="letter-guess" id="int3"></div>
+      <div class="letter-guess" id="int4"></div>
+      <div class="letter-guess" id="int5"></div>
+    </div>
+    <div id="grid"></div>
+    <p id="guesses"></p>
+    <div id="teclado"> 
+      <div class="fila fila1">
+        <button class="boton letra" value="Q" id="btn-Q">Q</button>
+        <button class="boton letra" value="W" id="btn-W">W</button>
+        <button class="boton letra" value="E" id="btn-E">E</button>
+        <button class="boton letra" value="R" id="btn-R">R</button>
+        <button class="boton letra" value="T" id="btn-T">T</button>
+        <button class="boton letra" value="Y" id="btn-Y">Y</button>
+        <button class="boton letra" value="U" id="btn-U">U</button>
+        <button class="boton letra" value="I" id="btn-I">I</button>
+        <button class="boton letra" value="O" id="btn-O">O</button>
+        <button class="boton letra" value="P" id="btn-P">P</button>
+      </div>
+      <div class="fila fila2" >
+        <button class="boton letra" value="A" id="btn-A">A</button>
+        <button class="boton letra" value="S" id="btn-S">S</button>
+        <button class="boton letra" value="D" id="btn-D">D</button>
+        <button class="boton letra" value="F" id="btn-F">F</button>
+        <button class="boton letra" value="G" id="btn-G">G</button>
+        <button class="boton letra" value="H" id="btn-H">H</button>
+        <button class="boton letra" value="J" id="btn-J">J</button>
+        <button class="boton letra" value="K" id="btn-K">K</button>
+        <button class="boton letra" value="L" id="btn-L">L</button>
+        <button class="boton letra" value="Ñ" id="btn-Ñ">Ñ</button>
+      </div>
+      <div class="fila fila3">
+        <button class="boton borrar" id="btn-borrar">←</button>
+        <button class="boton letra" value="Z" id="btn-Z">Z</button>
+        <button class="boton letra" value="X" id="btn-X">X</button>
+        <button class="boton letra" value="C" id="btn-C">C</button>
+        <button class="boton letra" value="V" id="btn-V">V</button>
+        <button class="boton letra" value="B" id="btn-B">B</button>
+        <button class="boton letra" value="N" id="btn-N">N</button>
+        <button class="boton letra" value="M" id="btn-M">M</button>
+        <button class="boton enter" id="btn-enter">Enter</button>        
+      </div>
+    </div>
+  </body>
+</html>
