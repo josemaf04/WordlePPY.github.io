@@ -1,76 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eee;
-  }
-     
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
-     
-  #guess-input {
-    display: block;
-    margin: 0 auto 20px;
-    padding: 10px;
-    font-size: 18px;
-    width: 250px;
-    border: 1px solid #ccc;
-  }
-      
-  button:active {
-      transform: scale(0.95);
-  }
-     
-  .letter {
-      border: 1px solid black;
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
-      text-align: center;
-      display: inline-block
-  }
-     
-  .row{
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: center;
-  }
-  .fila{
-    display: flex;
-    justify-content: center;
-  }
-     
-  .input-area{
-      margin: 30px;
-  }
-  .boton{
-    padding:8px;
-    background: #ddd;
-    font-size: 24px;
-    min-width: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
 }
-.letter-guess{
-    max-width: 40px;
-    max-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:24px;
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#grid {
+  margin-top: 20px;
+}
+
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.letter {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.fila {
+  display: flex;
+  justify-content: center;
+}
+
+.input-area {
+  margin: 30px;
+}
+.boton {
+  padding: 8px;
+  background: #ddd;
+  font-size: 24px;
+  min-width: 50px;
+}
+.letter-guess {
+  max-width: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 #intento {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-#loader{
-  background: #2EF29B;
-  width:100vw;
+#loader {
+  background: #2ef29b;
+  width: 100vw;
   height: 100vh;
   position: fixed;
-  top:0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 981px) {
+  .boton {
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #teclado {
+    margin: 0 5%;
+  }
+  .letter-guess,
+  .letter {
+    max-width: 80px;
+    max-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+  .letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
